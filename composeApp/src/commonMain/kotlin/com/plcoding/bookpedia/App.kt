@@ -3,7 +3,6 @@ package com.plcoding.bookpedia
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import com.plcoding.bookpedia.book.data.network.KtorRemoteBookDataSource
-import com.plcoding.bookpedia.book.data.network.RemoteBookDataSource
 import com.plcoding.bookpedia.book.data.repository.DefaultBookRepository
 import com.plcoding.bookpedia.book.presentation.book_list.BookListScreenRoot
 import com.plcoding.bookpedia.book.presentation.book_list.BookListViewModel
