@@ -6,4 +6,15 @@
     <string name="search_result">Search result</string>
     <string name="no_search_results">Oops, there aren't any books for your search query.</string>
     <string name="no_favorite_books">You haven't saved any favorite books yet.</string>
+
+
+    <string name="error_disk_full">Disk is full</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_request_timeout">Request timeout</string>
+    <string name="error_too_many_requests">Too many requests</string>
+    <string name="error_server">Server error</string>
+    <string name="error_serialization">Serialization error</string>
+    <string name="error_no_internet">No internet connection</string>
+
+
 </resources>
