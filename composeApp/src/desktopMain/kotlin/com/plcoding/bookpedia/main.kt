@@ -1,17 +1,17 @@
 package com.plcoding.bookpedia
 
-import androidx.compose.runtime.remember
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
-import io.ktor.client.engine.okhttp.OkHttp
+import com.plcoding.bookpedia.di.initCoin
 
-fun main() = application {
-    Window(
-        onCloseRequest = ::exitApplication,
-        title = "CMP-Bookpedia",
-    ) {
-        App(
-            clientEngine = remember { OkHttp.create()}
-        )
+fun main() {
+    initCoin()
+    application {
+        Window(
+            onCloseRequest = ::exitApplication,
+            title = "CMP-Bookpedia",
+        ) {
+            App()
+        }
     }
 }
