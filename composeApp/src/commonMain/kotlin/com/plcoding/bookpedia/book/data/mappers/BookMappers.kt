@@ -5,7 +5,7 @@ import com.plcoding.bookpedia.book.domain.Book
 
 fun SearchedBookDto.toBook(): Book {
     return Book(
-        id = id,
+        id = id.substringAfterLast("/"),
         title = title,
         imageUrl = if (coverEditionKey != null) {
             "https://covers.openlibrary.org/b/olid/${coverEditionKey}-L.jpg"
@@ -19,5 +19,6 @@ fun SearchedBookDto.toBook(): Book {
         averageRating = ratingsAverage,
         ratingCount = ratingsCount,
         numPages = numberOfPagesMedian,
-        numEditions = editionCount ?: 0,)
+        numEditions = editionCount ?: 0,
+    )
 }

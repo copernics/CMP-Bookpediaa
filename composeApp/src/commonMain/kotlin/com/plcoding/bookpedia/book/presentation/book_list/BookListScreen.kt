@@ -40,6 +40,7 @@ import cmp_bookpedia.composeapp.generated.resources.search_result
 import com.plcoding.bookpedia.book.domain.Book
 import com.plcoding.bookpedia.book.presentation.book_list.components.BookList
 import com.plcoding.bookpedia.book.presentation.book_list.components.BookSearchBar
+import com.plcoding.bookpedia.book.presentation.book_list.components.DoomyBookList
 import com.plcoding.bookpedia.core.presentation.DarkBlue
 import com.plcoding.bookpedia.core.presentation.DesertWhite
 import com.plcoding.bookpedia.core.presentation.SandYellow
@@ -204,7 +205,7 @@ fun BookListScreen(
                                         }
 
                                         else -> {
-                                            BookList(
+                                            DoomyBookList(
                                                 books = state.searchResults,
                                                 onBookClick = { book ->
                                                     onAction(BookListAction.OnBookClick(book))

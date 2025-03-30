@@ -12,6 +12,16 @@ import androidx.compose.ui.unit.dp
 import com.plcoding.bookpedia.book.domain.Book
 
 @Composable
+fun DoomyBookList(
+    books: List<Book>,
+    onBookClick: (Book) -> Unit,
+    modifier: Modifier = Modifier,
+    scrollState: LazyListState,
+) {
+    BookList(books, onBookClick, modifier, scrollState)
+}
+
+@Composable
 fun BookList(
     books: List<Book>,
     onBookClick: (Book) -> Unit,
@@ -22,7 +32,7 @@ fun BookList(
         modifier = modifier,
         state = scrollState,
         verticalArrangement = Arrangement.spacedBy(12.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         items(items = books, key = { book -> book.id }) { book ->
             BookListItem(

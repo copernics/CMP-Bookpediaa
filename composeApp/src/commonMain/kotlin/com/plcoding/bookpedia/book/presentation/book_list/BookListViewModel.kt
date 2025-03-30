@@ -51,7 +51,6 @@ class BookListViewModel(
 
             is BookListAction.onTabSelected -> {
                 _state.update { it.copy(selectedTabIndex = action.index) }
-
             }
         }
     }
