@@ -18,6 +18,4 @@ data class SearchedBookDto(
     @SerialName("ratings_count") val ratingsCount:Int? = null,
     @SerialName("number_of_pages_median") val numberOfPagesMedian:Int? = null,
     @SerialName("edition_count") val editionCount:Int? = null,
-
-
 )
